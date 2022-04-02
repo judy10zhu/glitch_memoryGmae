@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+
+    <title>Rick and Morty!</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <!-- this is the start of content -->
+    <h1>
+      Light and Sound Memory Game
+    </h1>
+    <p>
+     Welcome to the game! Repeat back the pattern by pressing the buttons!
+    </p>
+    <button id="startBtn" onclick="startGame()">
+      Start
+    </button>
+    <button id="stopBtn" class = "hidden" onclick="stopGame()">
+      Stop
+    </button>
+    
+     <p>
+       Number of mistakes:<div id = "counts"></div>
+      </p>
+    
+    <div id= "gameButtonArea">
+      <button id="button1" onclick="guess(1)" onmousedown="startTone(1)" onmouseup="stopTone()"><img id= "rick" src="https://cdn.glitch.global/f74f3c57-828a-4ee3-99e6-ee81259de971/rick?v=1648690389804"  /></button>
+      <button id="button2" onclick="guess(2)" onmousedown="startTone(2)" onmouseup="stopTone()"><img id= "morty" src= "https://cdn.glitch.global/f74f3c57-828a-4ee3-99e6-ee81259de971/morty?v=1648690404241"  /></button>
+      <button id="button3" onclick="guess(3)" onmousedown="startTone(3)" onmouseup="stopTone()"><img id= "jerry" src= "https://cdn.glitch.global/f74f3c57-828a-4ee3-99e6-ee81259de971/jerry?v=1648690419410"  /></button>
+      <button id="button4" onclick="guess(4)" onmousedown="startTone(4)" onmouseup="stopTone()"><img id = "beth" src = "https://cdn.glitch.global/f74f3c57-828a-4ee3-99e6-ee81259de971/Beth?v=1648690436493"  /></button>
+      <button id="button5" onclick="guess(5)" onmousedown="startTone(5)" onmouseup="stopTone()"><img id = "summer" src = "https://cdn.glitch.global/f74f3c57-828a-4ee3-99e6-ee81259de971/summer?v=1648690450176"  /></button>
+     </div>
+  </body>
+</html>
